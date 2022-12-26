@@ -1,7 +1,7 @@
 # slickSlider
 
 
-
+/*
 <script>
 $(function(){
     $('.slider-wrap').slick({
@@ -37,3 +37,4 @@ $(function(){
     });
 })
 </script>
+*/
