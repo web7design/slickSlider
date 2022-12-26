@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Slick</title>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script>
+      $( document ).ready( function() {
+        $( '.slider' ).slick( {
+          autoplay: true,
+          autoplaySpeed: 1000,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          responsive: [   //해상도에 맞게 보이는 이미지 설정하는 부분
+            {
+              breakpoint: 768,   //해상도 768px이하일 때 3개 
+              settings: {
+                slidesToShow: 3,
+                arrows: false,
+              }
+            },
+            {
+              breakpoint: 600,  //해상도 600px이하일 때 1개
+              settings: {
+                slidesToShow: 1,
+                arrows: false,
+              }
+            }
+          ]
+        } );
+      } );
+    //만약 작은 화면의 세팅부터 하고 싶다면 mobileFirst: true 옵션을 추가  
+    </script>
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .slider {
+        width: 80%;
+        margin: 0px auto;
+      }
+      .slider .slick-slide {
+        margin: 10px;
+      }
+      .slick-prev:before, .slick-next:before {
+        color: #444444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+        <div><img src="http://via.placeholder.com/1080x1080/ff0" alt=""></div>
+        <div><img src="http://via.placeholder.com/1080x1080/0f0" alt=""></div>
+        <div><img src="http://via.placeholder.com/1080x1080/333" alt=""></div>
+        <div><img src="http://via.placeholder.com/1080x1080/666" alt=""></div>
+        <div><img src="http://via.placeholder.com/1080x1080/999" alt=""></div>
+        <div><img src="http://via.placeholder.com/1080x1080/ccc" alt=""></div>
+    </div>
+  </body>
+</html>

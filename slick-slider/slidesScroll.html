@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Slick</title>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script>
+      $( document ).ready( function() {
+        $( '.slider' ).slick( {
+          autoplay: true,
+          autoplaySpeed: 1000,
+          slidesToShow: 3,     //한번에 보이는 슬라이드 수
+          slidesToScroll: 1,    //전환시 이동할 슬라이드 수
+        } );
+      } );
+    </script>
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .slider {
+        width: 1200px;
+        margin: 0px auto;
+      }
+      .slider .slick-slide {
+        margin: 10px;
+      }
+      .slick-prev:before, .slick-next:before {
+        color: #444444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+        <div><img src="http://via.placeholder.com/600x400/ff0" alt=""></div>
+        <div><img src="http://via.placeholder.com/600x400/0f0" alt=""></div>
+        <div><img src="http://via.placeholder.com/600x400/333" alt=""></div>
+        <div><img src="http://via.placeholder.com/600x400/666" alt=""></div>
+        <div><img src="http://via.placeholder.com/600x400/999" alt=""></div>
+        <div><img src="http://via.placeholder.com/600x400/ccc" alt=""></div>
+    </div>
+  </body>
+</html>
