@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Slick</title>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script>
+      $( document ).ready( function() {
+        $( '.slider' ).slick( {
+          autoplay: true,
+          autoplaySpeed: 1000,
+        } );
+      } );
+    </script>
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .slider {
+        width: 1280px;
+        margin: 0px auto;
+      }
+      .slick-prev:before, .slick-next:before {
+        color: #444444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <div><img src="http://via.placeholder.com/1920x1080/ff0" alt=""></div>
+      <div><img src="http://via.placeholder.com/1920x1080/0f0" alt=""></div>
+      <div><img src="http://via.placeholder.com/1920x1080/333" alt=""></div>
+      <div><img src="http://via.placeholder.com/1920x1080/666" alt=""></div>
+      <div><img src="http://via.placeholder.com/1920x1080/999" alt=""></div>
+      <div><img src="http://via.placeholder.com/1920x1080/ccc" alt=""></div>
+    </div>
+  </body>
+</html>
